@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Compound.me</title>
+            <link href="main.css" type="text/css" rel="stylesheet">
+            <script type="text/javascript" src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+            <script type="text/javascript" src ='main.js'></script>
+           
+        </head>
+
+        <body>
+            <h1>Compound.me</h1>
+            
+            <h2>The premier compound interest calculator</h2>
+            
+            <div>
+                <h3 id = "result"></h3>
+            </div>
+            
+            <div class = "inputs">
+                <form>
+                    <div class = "titleinp">    
+                        <div class = "divinp">
+                        Amount
+                        </div>
+
+                        <div class = "inp">
+                        <input type ="text" id = "amount" name = "amount" placeholder = "Your starting amount here" onkeyup="getNums()">
+                        </div>
+                    </div>
+                        <div class = "divinp">
+                        Time
+                        </div>
+
+                        <div class = "inp">
+                        <input type ="text" id = "time" name = "time" placeholder = "No. of years here" onkeyup="getNums()">
+                        </div>
+
+                        <div class = "divinp">
+                        Interest
+                        </div>
+
+                        <div class = "inp">
+                        <input type ="text" id = "rate" name = "rate" placeholder = "% p.a. here" onkeyup="getNums()">
+                        </div>
+                </form>
+            </div>   
+            
+            <div class = "divbutton">
+                <button id="button">What is this?</button>
+            </div>
+            
+            <div class = "info">
+                
+                <h3>"Compound interest is the eighth wonder of the world. He who understands it, earns it...he who doesn't...pays it." - Albert Einstein</h3>
+                <p>
+                    <b>Compound.me</b> helps you easily calculate your potential <b>future wealth</b> using the power of compound interest! 
+                </p>
+                
+                <p>
+                    This tool is perfect for finding out the future value of any of <b>your assets</b>, including your property, term deposits, bonds and shares...really anything that changes in value over time!
+                </p>
+                
+                <ul>All you need is:
+                    <li>The value of your asset today</li>
+                    <li>The number of years you will own the asset for (e.g. half a year = 0.5, one month = 0.8333, etc.)</li>
+                    <li>Your expected yearly return on the asset (note: you can freely estimate this if it is unknown!)</li>
+                </ul>
+                
+                <h4>Here are some powerful ways to use Compound.me</h4>
+                
+                
+                    <button class="exampleButton">Example 1: Your property<br></button>
+                
+                <p id = "exampleOne">    
+                    You currently own a house worth $500,000 and are curious as to how much it could be worth in 20 years. Your research tells you that real estate in your area averages a 5% increase in value year on year.<br><br>
+                    
+                    To calculate, we would enter "500000" into <b>Amount</b>, "20" into <b>Time</b>, and "5" into <b>Interest</b>.<br><br>
+                    
+                    That should give us $1,326,648,85!<br><br>
+                    
+                    However, your friend who works in real estate tells you that the assumption that your property value will grow by 5% per year is slightly off and should be 4.9%, but assures that it doesn't make much of a difference. Out of curiosity you decide to enter "4.9" into <b>Interest</b> instead of "5"...<br><br>
+                    
+                    ...giving us a value of $1,301,606.68. A difference of $25,042.17!<br><br>
+                    
+                    This goes to show just how sensitive your future value is to your estimates of yearly return - especially when you are looking far into the future.<br><br>
+                    
+                    This example also shows just how important it is to <b>do your own research</b> and come up with an educated estimate of your asset's growth rate. We also recommend that you test out a range of estimates for <b>Amount, Time, and Interest</b> to give you a possible range that your asset value could fall under. Even the best of us aren't fortune tellers!
+                </p>
+                 
+            </div>
+            
+        </body>
+    </html>
+
