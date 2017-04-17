@@ -75,6 +75,7 @@ input[type=text]{
 
 .divbutton{
     width:100%;
+    padding-bottom: 2%;
 }
 
 #button{
@@ -133,5 +134,7 @@ input[type=text]{
 }
 
 #disclaimer{
-    font-size: 0.5em;
+    font-size: 0.7em;
+    max-width: 50%;
+    margin:auto;
 }
