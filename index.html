@@ -5,6 +5,7 @@
             <link href="main.css" type="text/css" rel="stylesheet">
             <script type="text/javascript" src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
             <script type="text/javascript" src ='main.js'></script>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
            
         </head>
 
@@ -72,29 +73,53 @@
                 
                     <button class="exampleButton">Example: Your property<br></button>
                 
-                <p id = "exampleOne">    
-                    You currently own a house worth $500,000 and are curious as to how much it could be worth in 20 years. Your research tells you that real estate in your area averages a 5% increase in value year on year.<br><br>
+                    <p id = "exampleOne">    
+                        You currently own a house worth $500,000 and are curious as to how much it could be worth in 20 years. Your research tells you that real estate in your area averages a 5% increase in value year on year.<br><br>
                     
-                    To calculate, we would enter "500000" into <b>Amount</b>, "20" into <b>Time</b>, and "5" into <b>Interest</b>.<br><br>
-                    
-                    That should give us $1,326,648,85!<br><br>
-                    
-                    However, your friend who works in real estate tells you that the assumption that your property value will grow by 5% per year is slightly off and should be 4.9%, but assures that it doesn't make much of a difference. Out of curiosity you decide to enter "4.9" into <b>Interest</b> instead of "5"...<br><br>
-                    
-                    ...giving us a value of $1,301,606.68. A difference of $25,042.17!<br><br>
-                    
-                    This goes to show just how sensitive your future value is to your estimates of yearly return - especially when you are looking far into the future.<br><br>
-                    
-                    This example also shows just how important it is to <b>do your own research</b> and come up with an educated estimate of your asset's growth rate. We also recommend that you test out a range of estimates for <b>Amount, Time, and Interest</b> to give you a possible range that your asset value could fall under. Even the best of us aren't fortune tellers!
-                </p>
+                        To calculate, we would enter "500000" into <b>Amount</b>, "20" into <b>Time</b>, and "5" into <b>Interest</b>.<br><br>
+
+                        That should give us $1,326,648,85!<br><br>
+
+                        However, your friend who works in real estate tells you that the assumption that your property value will grow by 5% per year is slightly off and should be 4.9%, but assures that it doesn't make much of a difference. Out of curiosity you decide to enter "4.9" into <b>Interest</b> instead of "5"...<br><br>
+
+                        ...giving us a value of $1,301,606.68. A difference of $25,042.17!<br><br>
+
+                        This goes to show just how sensitive your future value is to your estimates of yearly return - especially when you are looking far into the future.<br><br>
+
+                        This example also shows just how important it is to <b>do your own research</b> and come up with an educated estimate of your asset's growth rate. We also recommend that you test out a range of estimates for <b>Amount, Time, and Interest</b> to give you a possible range that your asset value could fall under. Even the best of us aren't fortune tellers!
+                    </p>
                 
-                <button class="exampleButton">Example: Your Hard Earned Cash<br></button>
+                    <button class="exampleButton">Example: The real value of your money<br></button>
                 
-                <p id = "exampleTwo">    
-                    
-                </p>
-                 
+                    <p id = "exampleTwo">    
+                        Knowing the power of compound interest, you decided to deposit $1000 into a savings account with your bank exactly 2 years ago and have not touched it since. You are curious about how much your savings have grown on an interest rate of 1% p.a. <br><br>
+
+                        We enter "1000" into <b>Amount</b>, "2" into <b>Time</b>, and "1" into <b>Interest</b>.<br><br>
+
+                        The calculator tells us that we now have $1020.10 in savings. An increase of $20.10 from not doing much is pretty good!<br><br>
+
+                        However, does this mean that we can buy $20.10 worth of more things with our 2 years of savings? Not exactly. We have to consider the effects of <b>inflation</b> which reduces the value of the spending power of each unit of currency over time! This is unfortunately a natural byproduct of growth in all economies and affects all of us. You may be aware of this force when you notice the price of everything has increased since you were young.<br><br>
+
+                        Doing a quick search of your country's inflation rate from your central bank's website, you can see that it was on average 1.5% p.a. for the 2 years that your money was deposited.<br><br>
+
+                        Remember the $1020.10 we calculated earlier? That is known as the <b>nominal value</b> of your money because it does not consider inflation. The quoted interest rate by your bank of 1% p.a. is similarly called the <b>nominal interest rate</b>. Now we have to adjust our calculation to take into account inflation.<br><br>
+
+                        Inflation has a negative effect on the growth of our money because it is a concept that describes the shrinking of the value of our money. Recall that we found an inflation rate of 1.5% p.a. for the past 2 years, meaning no matter what we do with our money, it will be shrinking in <b>real value</b> by 1.5% p.a.. 
+
+                        This time we enter We enter "1000" into <b>Amount</b>, "2" into <b>Time</b>, and "-0.5" into <b>Interest</b> because our money earns interest of 1% p.a. but also shrinks in spending power by 1.5% p.a.<br><br>
+
+                        This gives us the current <b>real value</b> of $990.03!<br><br>
+
+                        So although our bank statement would say that we grew our money by $20.10, in actuality if we were to spend that money today, we would notice that we couldn't buy almost $10 as much as we could 2 years ago. Although it may sound like a terrible idea to put money into a bank account that pays a rate lower than inflation, imagine if you decided to keep your money somewhere safe at home which earns you no interest!<br><br>
+
+                        Our example here hopefully has made you aware that your money will always have the negative force of inflation working against you no matter what you do, assuming that your economy is growing. It is incredibly important, then, that you <b>keep your money earning more money for you</b>. Be even more aware that this does not necessarily mean to find investments that protentially provide an incredible return far beyond the inflation rate. A higher rate of return almost certainly is to make up for the investment's higher risk of not giving what you are expecting. It then comes down to what you personally are willing to lose in order to earn more. <br><br>
+
+                    </p>
             </div>
+            
+            <p id = "disclaimer">
+                <b>Disclaimer:</b> The results produced by the calculator and explanations that follow are intended as guides only. While every effort has been made to ensure that the calculation and methodology used to generate the results are accurate,  no liability or responsibility for the accuracy or completeness of the resulting calculations will be accepted. Users should exercise their own care and judgment with respect to the calculator's use. The creator also does not accept any liability or responsbility for any decisions made by a user based on using this website that resulted in their detriment. Please conduct your own further research and/or seek professional guidance where necessary.
+                </p>
             
         </body>
     </html>
