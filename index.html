@@ -12,7 +12,6 @@
             <h1>Compoundi</h1>
             
             <h2>The premier compound interest calculator</h2>
-            <h6>Mobile-friendly version coming soon</h6>
             
             <div>
                 <h3 id = "result"></h3>
@@ -22,19 +21,33 @@
                 <form>
                     <div>    
                         <div class = "divinp">
-                        Amount
+                        Initial
                         </div>
 
                         <div class = "inp">
-                        <input type ="text" id = "amount" name = "amount" placeholder = "Your starting amount here" onkeyup="getNums()">
+                        <input type ="text" id = "amount" name = "amount" placeholder = "Your initial amount here" onkeyup="getNums()">
                         </div>
+                        
+                        <div class = "divinp">
+                        Recurring
+                        </div>
+
+                        <div class = "inp">
+                        <input type ="text" id = "rec" name = "rec" placeholder = "Your recurring amount here" onkeyup="getNums()">
+                        </div>
+                        
                     </div>
                         <div class = "divinp">
-                        Time
+                            <select id = "timeSelect" onclick = "getNums()">
+                              <option value="Time">Time</option>
+                              <option value="0.00273972602">Days</option>
+                              <option value="0.08333333333">Months</option>
+                              <option value="1">Years</option>
+                            </select>
                         </div>
 
                         <div class = "inp">
-                        <input type ="text" id = "time" name = "time" placeholder = "No. of years here" onkeyup="getNums()">
+                        <input type ="text" id = "time" name = "time" placeholder = "No. of periods here" onkeyup="getNums()">
                         </div>
 
                         <div class = "divinp">
@@ -53,7 +66,6 @@
             
             <div class = "info">
                 
-                <h3>"Compound interest is the eighth wonder of the world. He who understands it, earns it...he who doesn't...pays it." - Albert Einstein</h3>
                 <p>
                     <b>Compoundi</b> helps you easily calculate your potential <b>future wealth</b> using the power of compound interest! 
                 </p>
@@ -64,7 +76,7 @@
                 
                 <ul>All you need is:
                     <li>The value of your asset today</li>
-                    <li>The number of years you will own the asset for (e.g. half a year = 0.5, a quarter of a year = 0.25, one month = 0.08333, etc.)</li>
+                    <li>The number of periods you will hold the asset for (in days, months, or years)</li>
                     <li>Your expected yearly return on the asset (note: you can freely estimate this if it is unknown!)</li>
                 </ul>
                 

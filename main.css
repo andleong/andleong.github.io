@@ -44,6 +44,7 @@ h6{
     width:34.5%;
     margin:1% auto;
     font-size: 2em;
+    color: #272727;
 }
 
 input[type=text]{
@@ -56,6 +57,7 @@ input[type=text]{
     text-align: right;
     align-items: center;
     font-size:1em;
+    
 }
 
 .divinp{
@@ -63,13 +65,22 @@ input[type=text]{
     border: 1.5px solid #ccc;
     width:7%;
     margin-left:32.7%;
-    margin-right:0;
-    padding: 1% 1.5%;
+    padding: 1% 1%;
     border-radius: 4px;
-    text-align:center;
+    text-align:left;
     color: #272727;
     font-size:1em;
-    
+}
+
+select {
+    border: none;
+    box-shadow: none;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Ic_arrow_drop_down_48px.svg/2000px-Ic_arrow_drop_down_48px.svg.png) ;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size:1em;
+    width:100%;
     
 }
 
@@ -81,7 +92,6 @@ input[type=text]{
 }
 
 .divbutton{
-    width:100%;
     padding-bottom: 2%;
 }
 
