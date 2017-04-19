@@ -15,7 +15,7 @@ h1{
 h2{
     text-align:center;
     margin-top:0%;
-    margin-bottom:0%;
+    margin-bottom:2%;
     font-size:150%;
     color: #272727;
 }
@@ -57,7 +57,11 @@ input[type=text]{
     text-align: right;
     align-items: center;
     font-size:1em;
-    
+    outline: none;
+}
+
+input[type=text]:focus {
+    border:1px solid #82E0AA;
 }
 
 .divinp{
@@ -75,14 +79,15 @@ input[type=text]{
 select {
     border: none;
     box-shadow: none;
-    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Ic_arrow_drop_down_48px.svg/2000px-Ic_arrow_drop_down_48px.svg.png) ;
-    -webkit-appearance: none;
+    background: transparent url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") no-repeat 90% center;
+    -webkit-appearance: none ;
     -moz-appearance: none;
     appearance: none;
     font-size:1em;
-    width:100%;
-    
+    width:100%;  
 }
+
+
 
 .inp{
     display:inline;
@@ -101,7 +106,7 @@ select {
     padding: 0.5% 1%;
     cursor: pointer;
     font-size: 1em;
-    margin:1.5% auto 0% auto;
+    margin:1.5% auto 1.5% auto;
     font-weight:600;
     border: 1.5px solid #ccc;
     border-radius: 4px;
@@ -114,8 +119,8 @@ select {
     padding: 0.5% 1%;
     cursor: pointer;
     font-size: 1em;
-    margin:1.5% auto 0% auto;
-    font-weight:700;
+    margin:1.5% auto 1.5% auto;
+    font-weight:600;
     border: 1.5px solid green;
     border-radius: 4px;
 }
@@ -125,9 +130,7 @@ select {
     max-width: 50%;
     margin:auto;
     display:none;
-    color:#272727;
-    
-    
+    color:#272727;  
 }
 
 #exampleOne{
