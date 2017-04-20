@@ -61,7 +61,7 @@ input[type=text]{
 }
 
 input[type=text]:focus {
-    border:1px solid #82E0AA;
+    border:1px solid rgba(171, 235, 198,1);
 }
 
 .divinp{
@@ -79,12 +79,12 @@ input[type=text]:focus {
 select {
     border: none;
     box-shadow: none;
-    background: transparent url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") no-repeat 90% center;
+    background: transparent url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") no-repeat 100% center;
     -webkit-appearance: none ;
     -moz-appearance: none;
     appearance: none;
     font-size:1em;
-    width:100%;  
+    width:105%;  
 }
 
 
@@ -93,6 +93,14 @@ select {
     display:inline;
     width:80%;
     margin:0;
+    
+}
+
+#divChart {
+    width: 70%;
+    height: 50%;
+    margin: auto;
+    padding-top: 2%;
     
 }
 

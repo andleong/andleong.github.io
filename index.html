@@ -5,6 +5,7 @@
             <link href="main.css" type="text/css" rel="stylesheet">
             <script type="text/javascript" src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
             <script type="text/javascript" src ='main.js'></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
            
         </head>
 
@@ -25,7 +26,7 @@
                         </div>
 
                         <div class = "inp">
-                        <input type ="text" id = "amount" name = "amount" placeholder = "Enter asset value today here" onkeyup="getNums()">
+                        <input type ="text" id = "amount" name = "amount" placeholder = "Enter asset value today here" onkeyup="allFunctions()">
                         </div>
                         
                         <div class = "divinp">
@@ -33,12 +34,12 @@
                         </div>
 
                         <div class = "inp">
-                        <input type ="text" id = "rec" name = "rec" placeholder = "Your recurring future investments here" onkeyup="getNums()">
+                        <input type ="text" id = "rec" name = "rec" placeholder = "Your recurring future investments here" onkeyup="allFunctions()">
                         </div>
                         
                     </div>
                         <div class = "divinp">
-                            <select id = "timeSelect" onclick = "getNums()">
+                            <select id = "timeSelect" onclick = "allFunctions()">
                               <option value="Time">Time</option>
                               <option value="0.00273972602">Days</option>
                               <option value="0.08333333333">Months</option>
@@ -47,7 +48,7 @@
                         </div>
 
                         <div class = "inp">
-                        <input type ="text" id = "time" name = "time" placeholder = "No. of compounding periods here" onkeyup="getNums()">
+                        <input type ="text" id = "time" name = "time" placeholder = "No. of compounding periods here" onkeyup="allFunctions()">
                         </div>
 
                         <div class = "divinp">
@@ -55,10 +56,14 @@
                         </div>
 
                         <div class = "inp">
-                        <input type ="text" id = "rate" name = "rate" placeholder = "Expected % p.a. here" onkeyup="getNums()">
+                        <input type ="text" id = "rate" name = "rate" placeholder = "Expected % p.a. here" onkeyup="allFunctions()">
                         </div>
                 </form>
             </div>   
+            
+            <div id = "divChart">
+                <canvas id="myChart"></canvas>
+            </div>
             
             
                 <button id="button">What is this?</button>
