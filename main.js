@@ -13,30 +13,36 @@ function getNums() {
         result = 0;
     
     function calc(amount, time, rate) {
+        
+        if (isNaN(rec)) {
+            rec = 0;
+        }
+        
         var ans = amount * Math.pow((1 + (rate * t) / 100), time) + rec * (Math.pow((1 + (rate * t) / 100), time) - 1) / (rate * t / 100);
-        return ans.toFixed(2);
+        if (isNaN(ans)) {
+            return 0;
+        } 
+            return ans.toFixed(2);  
     }
     
-    result = calc(amount, time, rate);
-    document.getElementById("result").innerHTML = result;
+        result = calc(amount, time, rate);
+        document.getElementById("result").innerHTML = result;
    
 }
 
+    $(document).ready(getNums);
+    $(document).ready(function () {
+        "use strict";
+        $("#button").click(function button() {
+            $(this).next().fadeToggle(400);
+            $("#button").toggleClass("active");
+        });
 
-
-
-$(document).ready(getNums);
-$(document).ready(function () {
-    "use strict";
-    $("#button").click(function button() {
-        $(this).next().fadeToggle(400);
-        $("#button").toggleClass("active");
-    });
-    
-    $(".exampleButton").click(function button() {
-        $(this).next().fadeToggle(400);
-    });
+        $(".exampleButton").click(function button() {
+            $(this).next().fadeToggle(400);
+        });
 });
+
 
 function graph() {
     "use strict";
@@ -49,8 +55,13 @@ function graph() {
         rateless = parseFloat(document.getElementById("rate").value) - 1,
         v = document.getElementById("timeSelect"),
         t = v.value,
-        period = v.textContent,
-        n0 = amount,
+        period = v.textContent;
+    
+        if (isNaN(rec)) {
+            rec = 0;
+        }
+    
+    var n0 = amount,
         n1 = amount * Math.pow((1 + (rate * t) / 100), time / 5) + rec * (Math.pow((1 + (rate * t) / 100), time / 5) - 1) / (rate * t / 100),
         n2 = amount * Math.pow((1 + (rate * t) / 100), time *  2 / 5) + rec * (Math.pow((1 + (rate * t) / 100), time * 2 / 5) - 1) / (rate * t / 100),
         n3 = amount * Math.pow((1 + (rate * t) / 100), time*3/5) + rec * (Math.pow((1 + (rate * t) / 100), time*3/5) - 1) / (rate*t/100),
